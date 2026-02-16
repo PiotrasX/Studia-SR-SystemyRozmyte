@@ -1,0 +1,25 @@
+Zadanie 1
+a) System wnioskowania zachowuje się zgodnie z oczekiwaniami. Dla każdej kombinacji oblicza wysokość napiwku na podstawie innej reguły TSK. Im lepsze jedzenie i obsługa, tym wyższy napiwek.
+b) Dla jakości jedzenia 6.5 zostanie odpalona reguła "średnie jedzenie" w stopniu 0.25 oraz "pyszne jedzenie" w stopniu 0.5. Dla jakości serwisu 5.0 zostanie odpalona reguła "średni serwis" w stopniu 1.0.
+Reguła (medium, medium) = min(0.25, 1) = 0.25. Z taką wartością zostanie odpalone medium_tip.
+Reguła (high, medium) = min(0.5, 1) = 0.5. Z taką wartością zostanie odpalone generous_tip.
+Obliczenie medium_tip = 0 + 0.7 * 6.5 + 0.7 * 5.0 = 4.55 + 3.5 = 8.05.
+Obliczenie generous_tip = 0 + 6.5 + 5.0 = 11.5.
+Obliczenie agregacji TSK = (0.25 * 8.05 + 0.5 * 11.5) / (0.25 + 0.5) = (2.0125 + 5.75) / 0.75 = 7.7625 / 0.75 = 10.35. Zatem wynik napiwku jest zgodny z oczekiwaniami, wyjście zostało poprawnie wyliczone.
+
+Zadanie 2
+Zaproponowany model TSK uwzględnia sytuację ponadprzeciętnej produktywności pracownika.
+Zbiór rozmyty „Dużo powyżej średniej produkcja” obejmuje wartości od 90 do 150 sztuk, co stanowi maksimum zakresu uniwersum wyprodukowanych sztuk produktów. Dla wartości od 90 do 110 sztuk, system wnioskowania rozmytego miesza funkcje przynależności "Troszkę powyżej średniej produkcja" oraz "Dużo powyżej średniej produkcja". Dla wyższych wartości brana jest pod uwagę tylko ta druga funkcja przynależności.
+Dzięki temu system nie ogranicza premii dla bardzo produktywnych pracowników. Wartość premii rośnie liniowo wraz z liczbą wyprodukowanych sztuk (np.: dla 130 sztuk będzie to 800 zł, dla 150 sztuk będzie to 1000 zł).
+Tym samym model poprawnie odwzorowuje politykę wynagradzania również dla przypadków ponadprzeciętnych.
+
+Zadanie 3
+Zaproponowany model TSK poprawnie odwzorowuje zależność między metrażem, odległością od ścisłego centrum i wiekiem budynku a wartością mieszkania. Wyceny są realistyczne: większe, nowsze i położone bliżej centrum mieszkania mają wyższą wartość, natomiast mniejsze, starsze i na obrzeżach miasta mają niższą wartość.
+
+Zadanie 4
+a) Dla zbioru rancid_food przynależność do tego zbioru dla wartości 0.0 wynosi między 0.99 a 1.0, a dla wartości 2.0 wynosi między 0.0 a 0.335.
+b) Gdy niepewność przynależenia do danego zbioru rozmytego jest niewielka to wynik wnioskowania jest bardziej stabilny i bliższy wartości oczekiwanej.
+Gdy niepewność przynależenia do danego zbioru rozmytego jest większa to mogą wystąpić lokalne spadki lub nieregularności wyniku wnioskowania.
+
+Zadanie 5
+Zaproponowany model przedziałowo-rozmyty typu Mamdaniego poprawnie odwzorowuje zależność między metrażem, odległością od ścisłego centrum i wiekiem budynku a wartością mieszkania. System uwzględnia niepewność danych wejściowych poprzez przedziałowe funkcje przynależności, dzięki czemu wyceny są bardziej elastyczne i odporne na nieprecyzyjne informacje. Wyniki potwierdzają logiczne zależności: większe, młodsze i położone bliżej centrum mieszkania mają wyższą wartość, natomiast mniejsze, starsze i na obrzeżach miasta mają niższą wartość.

@@ -1,0 +1,41 @@
+Zadanie 1
+Pliki 'aplet.html' i 'FuzzyPendulum.jar' pobrane.
+
+Zadanie 2
+Debuger apletów włączony.
+
+Zadanie 3
+Wartość 'Global Current Output' powstała jako suma konkluzji wszystkich aktualnie aktywnych reguł.
+
+Zadanie 4
+Reguły przeanalizowane.
+
+Zadanie 5
+Wyłączenie reguł powoduje, że sterownik ciągle pracuje (zużywa energię) i praca jest nieefektywna (nieoptymalna).
+Oznacza to, że wyłączone reguły były potrzebne aby zminimalizować zużycie pracy silnika.
+
+Zadanie 6
+Opcja 'Stop Bopping' nic nie zmieniła, czyli siła zewnętrzna nie działała na wahadło, oznacza to, że silnik jak wcześniej ciągle sam pracował, tak dalej sam pracuje. Czyli siła zewnętrzna nie działa aktualnie na wahadło. To silnik powoduje, że wahadło nie działa optymalnie, a nie siła zewnętrzna.
+
+Zadanie 7
+Przy włączeniu wszystkich reguł i włączeniu opcji 'Stop Bopping' wahadło jest w równowadze. Czyli silnik pracuje na minimalnym zużyciu energii.
+Przy włączeniu wszystkich reguł i wyłączeniu opcji 'Stop Bopping' wahadło co jakiś czas jest wychylane w jedną stronę. Czyli silnik pracuje co jakiś czas, ale nie ciągle i nie minimalnie. Ogólnie jest to efektywna praca silnika (sterownika).
+
+Zadanie 8
+Wszystkie reguły wyłączone i naciśnięto 'Pull right'.
+Reguła, która sprawi, że wahadło odchyli się z powrotem to 'PM'.
+Wszystkie reguły wyłączone i naciśnięto 'Pull left'.
+Reguła, która sprawi, że wahadło odchyli się z powrotem to 'NM'.
+
+Zadanie 9
+Gdy masa wahadła jest na maksimum, a moc silnika na minimum, wahadło nie powraca do pierwotnej formy (do równowagi) oraz silnik ciągle pracuje nieefektywnie.
+
+Zadanie 10
+Gdy masa wahadła jest na minimum, a moc silnika na maksimum. Wyłączenie reguły 'PS' powoduje, że wahadło nie powraca do równowagi.
+Gdy ustawiono troszkę większą masę wahadła, reguła ta nie powoduje już problemów aby wahadło powracało do równowagi.
+
+Zadanie 11
+Przy włączeniu opcji 'Bob UpDown' (wahadło na sprężynie) i występowaniu asymetrii między masą wahadła i mocą silnika to sterownik nie działa optymalnie (wariuje).
+
+Zadanie 12
+Przy włączeniu opcji 'Bob UpDown' (wahadło na sprężynie) i gdy masa wahadła jest proporcjonalna do mocy silnika to sterownik działa optymalnie (nie wariuje tak często jak w poprzednim przykładzie).
