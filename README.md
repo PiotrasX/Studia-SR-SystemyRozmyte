@@ -1,4 +1,4 @@
-# 📘 Studia - SR - Systemy Rozmyte
+# 📘 Studia – SR - Systemy Rozmyte
 
 Repozytorium zawiera rozwiązania zadań opracowane w ramach przedmiotu **Systemy Rozmyte**, realizowanego na Uniwersytecie Rzeszowskim podczas siódmego (7) semestru studiów inżynierskich na kierunku Informatyka.  
 
